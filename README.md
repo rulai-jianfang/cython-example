@@ -15,3 +15,5 @@ python compile.py build_ext --inplace
 ```
 python main.py
 ```
+
+## Looks like cython not like lambda functions, I have another pythong file with lambda which can not be compiled correctly even direct run is working
