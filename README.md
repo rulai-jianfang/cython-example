@@ -16,8 +16,7 @@ python compile.py build_ext --inplace
 python main.py
 ```
 
-## Looks like cython not like lambda functions, I have another python file with lambda functions which can not be compiled correctly even direct run is working
-
+## Cython does not support nested tuple argument unpacking, so when we use lambda functions, may need change to the following format
 
 ```
 Cython does not support nested tuple argument unpacking.
@@ -43,3 +42,6 @@ def test():
 
 but then you mostly end up with code mostly served by C routines anyway..
 ```
+## References
+https://stackoverflow.com/questions/21682402/cython-doesnt-support-sorted-with-key
+http://docs.cython.org/en/latest/src/userguide/limitations.html#nested-tuple-argument-unpacking
